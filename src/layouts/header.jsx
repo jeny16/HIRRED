@@ -8,7 +8,6 @@ import {useSearchParams} from 'react-router-dom'
 const Header = () => {
 
   const [showSignIn, setShowSignIn] = useState(false); 
-
   const [search, setSearch] = useSearchParams();
 
   useEffect(() => {

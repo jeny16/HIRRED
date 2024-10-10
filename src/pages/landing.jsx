@@ -7,7 +7,7 @@ import companies from "../data/companies.json"
 import Autoplay from 'embla-carousel-autoplay';
 import faqs from "../data/faq.json"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
- 
+
 
 const Landing = () => {
   return (
@@ -56,7 +56,7 @@ const Landing = () => {
       {/* banner */}
 
 
-      <section className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+      <section className='px-4 grid grid-cols-1 md:grid-cols-2 gap-4'>
         <Card>
           <CardHeader>
             <CardTitle>FOR JOB SEEKERS</CardTitle>
@@ -76,17 +76,18 @@ const Landing = () => {
       </section>
 
       {/* accordian */}
-
-      <Accordion type="single" collapsible>
-        {faqs.map((faq,index) => {
-          return(
-        <AccordionItem key={index} value={`item-${index + 1}`}>
-          <AccordionTrigger>{faq.question}</AccordionTrigger>
-          <AccordionContent>{faq.answer}</AccordionContent>
-        </AccordionItem>
-        );
-      })}
-      </Accordion>
+      <section className='px-5'>
+        <Accordion type="single" collapsible>
+          {faqs.map((faq, index) => {
+            return (
+              <AccordionItem key={index} value={`item-${index + 1}`}>
+                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                <AccordionContent>{faq.answer}</AccordionContent>
+              </AccordionItem>
+            );
+          })}
+        </Accordion>
+      </section>
     </main>
   )
 }
