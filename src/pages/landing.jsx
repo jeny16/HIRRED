@@ -62,7 +62,7 @@ const Landing = () => {
             <CardTitle>FOR JOB SEEKERS</CardTitle>
           </CardHeader>
           <CardContent>
-            search and apply for a job
+            Search And Apply For A JOB.
           </CardContent>
         </Card>
         <Card>
@@ -70,7 +70,7 @@ const Landing = () => {
             <CardTitle>FOR EMPLOYEER</CardTitle>
           </CardHeader>
           <CardContent>
-            Post Jobs, Manage Applications and find the best candidates.
+            Post Jobs, Manage Applications And Find The Best Candidates.
           </CardContent>
         </Card>
       </section>
